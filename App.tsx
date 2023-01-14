@@ -1,21 +1,14 @@
-import React from 'react'
-import { View } from 'react-native'
-import { Horse, Heart, Cube } from 'phosphor-react-native'
+import { Navigation } from '@root/navigation'
 
-const App = () => {
+import { ThemeProvider } from '@root/theme/ThemeProvider'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Horse />
-      <Heart color="#AE2983" weight="fill" size={32} />
-      <Cube color="teal" weight="duotone" />
-    </View>
+    <ThemeProvider>
+      <SafeAreaProvider>
+        <Navigation />
+      </SafeAreaProvider>
+    </ThemeProvider>
   )
 }
-
-export default App
