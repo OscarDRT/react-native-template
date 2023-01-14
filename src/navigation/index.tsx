@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Profile } from '@screens/Profile'
 import { useTheme } from '@root/theme/ThemeProvider'
-import { User } from 'phosphor-react-native'
+import { House, User } from 'phosphor-react-native'
 import { scale } from '@root/utils/commons'
 import { Home } from '@screens/Home'
 
@@ -60,7 +60,7 @@ const TabContainer = () => {
         component={Home}
         options={{
           tabBarIcon: ({ color, size, focused }) => (
-            <User
+            <House
               size={scale(size)}
               color={color}
               weight={focused ? 'fill' : 'thin'}
