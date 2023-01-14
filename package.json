@@ -10,8 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "phosphor-react-native": "^1.1.2",
     "react": "17.0.2",
-    "react-native": "0.67.5"
+    "react-native": "0.67.5",
+    "react-native-svg": "13.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
